@@ -16,19 +16,27 @@ The main content of the assessment is:
 #### Overview Repository Content
 |File Name|Short Description|File Type|
 |-|-|-|
-|README.md|Overview document in repository|.md|
+|[README.md](https://github.com/StefaniDossi/Assessment_1_Test/edit/main/README.md)|Overview document in repository|.md|
 ||Description of entities and attributes and there relationship|.png|
 ||Pseudocodes for planning Flow in database creation and respetive queries|.txt|
 ||Code for creating MySQL tables|.txt or .sql|
 ||Code for creating MySQL queries|.txt or sql|
 ||MySQL database with all relevant Tables|.sql|
 
+#### General Information
+
+
 #### Details Repository 
+##### README File
+##### Data Dictionary
 ##### Pseudocode File
 ##### Codes for Tables
 Four tables have been generated from four available .csv file
-##### Codes 
+##### Codes for MySQL
 
+##### MySQL Database
+
+#### Instructions
 
 #### Online Resources used for Troubleshooting
 * https://www.w3schools.com/
