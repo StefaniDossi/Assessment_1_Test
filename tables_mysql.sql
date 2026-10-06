@@ -53,7 +53,7 @@ CREATE TABLE prescriptions(
 	doctor_id INT unsigned NOT NULL,
 	medication VARCHAR (150) NOT NULL,
 	prescription_date DATE NOT NULL,
-	FOREIGN KEY (patient_id) REFERENCES patients (person_id)
+	FOREIGN KEY (patient_id) REFERENCES patients (person_id);
 	FOREIGN KEY (doctor_id) REFERENCES doctors (person_id)
 );
 
