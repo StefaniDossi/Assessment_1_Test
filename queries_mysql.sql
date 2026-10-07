@@ -1,41 +1,42 @@
 -------------------------------------
--- Queries MySQL for database "A hosptial database"
+-- Queries MySQL for database "A hospital database"
 ------------------------------------
 
--- Query 1: print a list of all doctors based at a particular hospital
+-- QUERY 1: List all doctors based at a specific hospital
 
+SELECT doctors.name AS Doctors, hospitals.name AS Hospital FROM doctors
+	INNER JOIN hospitals
+	ON doctors.hospital_id = hospitals.hospital_id
+	WHERE doctors.hospital_id = 19;
 
+-- QUERY 2: List all prescriptions for a specific patient
 
--- Query 2: print a list of all prescriptions for a particular patient, ordered by the prescription date 
+SELECT prescriptions.prescription_id, prescriptions.prescription_date, prescriptions.medication FROM prescriptions
+	INNER JOIN patients
+	ON prescriptions.patient_id = patients.person_id
+	WHERE patients.person_id = 230
+	ORDER BY prescriptions.prescription_date;
 
+-- QUERY 3: List all prescriptions issued by a specific doctor
 
+SELECT prescriptions.prescription_id, prescriptions.prescription_date, prescriptions.medication, doctors.name FROM prescriptions
+	INNER JOIN doctors
+	ON prescriptions.doctor_id = doctors.person_id
+	WHERE doctors.person_id = 3;
 
-
-
--- Query 3: print a list of all prescription that a particular doctor has prescribed 
-
-
-
-
-
--- Query 4: add a new patient to the database, including bein registered with one of the doctors
-
--- a) verify first last used id for patients
-
+-- QUERY 4: Add a new patient and assign the patient to a doctor
+-- a) Verify the highest existing patient ID
 SELECT * FROM patients
         WHERE person_id = (
                 SELECT MAX(person_id) FROM patients);
 
--- b) execute query
-
+-- b) Insert new patient record
 INSERT INTO patients (person_id, name, date_of_birth, address, role, doctor_id)
 VALUES (701, "Peter Griffin", '1960-10-28', "7569 Frame Apt. 671, New Patricia, OH 98749", 'Patient', 1);
 
 
+-- QUERY 5: Identify the doctors with the highest number of prescriptions 
 
--- Query 5: identify which doctors has made the most prescriptions 
-
-CREATE vw_top_prescribing_doctors VIEW
 SELECT doctors.name, prescriptions.doctor_id, COUNT(*) FROM prescriptions
 	INNER JOIN doctors
 	ON prescriptions.doctor_id = doctors.person_id
@@ -44,9 +45,8 @@ SELECT doctors.name, prescriptions.doctor_id, COUNT(*) FROM prescriptions
 	LIMIT 10 -- not the full output is needed
 
 
--- Query 6: print a list of all doctors at the hospital with biggest size (number of beds)
+-- QUERY 6: List all doctors working at the hospital with biggest size (number of beds)
 
-CREATE VIEW vw_doctors_largest_hospital AS
 SELECT doctors.name AS Doctor, hospitals.name AS Hospital, hospitals.size AS "Hospital Beds(N)" FROM doctors
 	INNER JOIN hospitals
 	ON doctors.hospital_id = hospitals.hospital_id
