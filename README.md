@@ -31,10 +31,25 @@ The main content of the assessment is:
 ##### Data Dictionary
 ##### Pseudocode File
 ##### Codes for Tables
+Code for tables and code for mySQL have been saved as .sql file, because compared to .txt file I like the formatting, clear how commands are structured;
 Four tables have been generated from four available .csv file
-##### Codes for MySQL
+
+Important note, when importing data from .csv adapt the path if necessary
+##### Codes for MySQL Queries
+For Queries were partial information should be selected from the different tables , the following codes are provided:
+* "Standard" Queries starting with the SELECT Statment
+* Create Views Queries 
+* Query to call the create View Query
+* 
 
 ##### MySQL Database
+contains the four tables: hospitals, doctors, patients, prescription and
+five create views that can be called using the code provided by the codes provided in the document mysql quereiy.sql file
+
+
+#### Additional Information
+* .csv file have been provided through the remote access, this file have intenionally not been loaded on github, as this data is normally sensitive, if sharing of data is needed  please contact me under sd1023@exeter.ac.uk and I will provide you with the informations
+
 
 #### Instructions
 
