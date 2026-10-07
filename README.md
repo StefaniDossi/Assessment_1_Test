@@ -2,13 +2,16 @@
 
 To copy after this text
 
-### Assessment 1 Computing Skills and Python
-Related to: Master of Health Data Science Exter, Module 1 Computing Skills and Phython
+### Module 1 - Assessment 1 
+Master of Health Data Science <br>
+University of Exter <br>
+Module: Computing Skills and Phython
 
-#### Overview Assessment Content
-The following repository contains the output for the assesssment of the above mentioned master.
-The main content of the assessment is:
-- code planning with Entity Relationship Diagram (ERD) and flowcharts
+#### Overview of Assessment Content
+This repository contains the deliverables completed as part of Assessment 1.
+
+The assessment focuses on:
+- code planning with Entity Relationship Diagram (ERD) and pseudocode
 - creating MySQL databases
 - writing MySQL queries
 - using GitHub to track and control projects
@@ -16,40 +19,43 @@ The main content of the assessment is:
 #### Overview Repository Content
 |File Name|Short Description|File Type|
 |-|-|-|
-|[README.md](https://github.com/StefaniDossi/Assessment_1_Test/edit/main/README.md)|Overview document in repository|.md|
-||Description of entities and attributes and there relationship|.png|
+|[README.md](https://github.com/StefaniDossi/Assessment_1_Test/edit/main/README.md)|Overview document in repository|.md| DELETE README FILE 
+||Description of entities, attributes, and their relationships|.png|
 ||Pseudocodes for planning Flow in database creation and respetive queries|.txt|
-||Code for creating MySQL tables|.txt or .sql|
-||Code for creating MySQL queries|.txt or sql|
-||MySQL database with all relevant Tables|.sql|
+||Code for creating MySQL tables|.sql|
+||SQL queries developed for the assignment tasks|.sql|
+||Export of the MySQL database containing all tables|.sql|
 
 #### General Information
+The database was designed using four main entities:
+- Hospitals
+- Doctors
+- Patients
+- Prescriptions  <br>
 
+Doctors and patients were implemented as separate tables to simplify relationships and improve readability of the database structure.
 
 #### Details Repository 
-##### README File
+
 ##### Data Dictionary
 ##### Pseudocode File
 ##### Codes for Tables
-Code for tables and code for mySQL have been saved as .sql file, because compared to .txt file I like the formatting, clear how commands are structured;
-Four tables have been generated from four available .csv file
+The table creation code was saved as a .sql file rather than a .txt file, as SQL formatting improves readability and clearly distinguishes database commands.
 
-Important note, when importing data from .csv adapt the path if necessary
+Four tables were created from the four provided `.csv` files.
+
+**Important note:** When importing data from the `.csv` files, the file paths may need to be adapted to match the local system configuration.
+
 ##### Codes for MySQL Queries
-For Queries were partial information should be selected from the different tables , the following codes are provided:
-* "Standard" Queries starting with the SELECT Statment
-* Create Views Queries 
-* Query to call the create View Query
-* 
+When writing the MySQL queries, I considered whether to use direct SELECT statements or CREATE VIEW statements. As the assignment did not require query reuse, I chose to use direct SELECT queries. This keeps the script concise and avoids creating unnecessary database objects.. 
+
 
 ##### MySQL Database
-contains the four tables: hospitals, doctors, patients, prescription and
-five create views that can be called using the code provided by the codes provided in the document mysql quereiy.sql file
+Contains the four tables: hospitals, doctors, patients, and prescriptions.
 
 
 #### Additional Information
-* .csv file have been provided through the remote access, this file have intenionally not been loaded on github, as this data is normally sensitive, if sharing of data is needed  please contact me under sd1023@exeter.ac.uk and I will provide you with the informations
-
+The original .csv files provided for the assessment have intentionally not been uploaded to GitHub. Although the dataset contains fictional information, healthcare datasets are generally considered sensitive and should be handled carefully. If access to the source files is required for assessment purposes, please contact me at sd1023@exeter.ac.uk.
 
 #### Instructions
 
