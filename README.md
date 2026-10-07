@@ -32,9 +32,16 @@ The main content of the assessment is:
 ##### Pseudocode File
 ##### Codes for Tables
 Four tables have been generated from four available .csv file
+
+Important note, when importing data from .csv adapt the path if necessary
 ##### Codes for MySQL
 
 ##### MySQL Database
+
+
+#### Additional Information
+* .csv file have been provided through the remote access, this file have intenionally not been loaded on github, as this data is normally sensitive, if sharing of data is needed  please contact me under sd1023@exeter.ac.uk and I will provide you with the informations
+
 
 #### Instructions
 
