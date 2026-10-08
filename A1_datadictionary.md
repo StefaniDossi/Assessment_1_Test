@@ -1,5 +1,12 @@
 ### DATA DICTIONARY
 
+#### Overview
+
+The database consists of four tables (Hospitals, Doctors, Patients and Prescriptions). 
+
+Primary and foreign keys are used to maintain referential integrity between related records.
+
+
 #### Hospitals
 
 |**Field**|**Data\_Type**|**Description**|**Constraints**|
@@ -17,7 +24,7 @@
 |-|-|-|-|
 |person_id|INT|Doctor unique identifier|Primary Key, NOT NULL|
 |name|VARCHAR(150)|Doctor name|NOT NULL|
-|date_of_birth|DATE|Doctor date of birth||NOT NULL|
+|date_of_birth|DATE|Doctor date of birth|NOT NULL|
 |address|VARCHAR(150)|Doctor address|NOT NULL|
 |role|VARCHAR(150)|Person role (i.e. Doctor)|NOT NULL|
 |hospital_id|INT|Hospital unique identifier|Foreign Key, NOT NULL|
