@@ -9,7 +9,7 @@ The assessment focuses on:
 - using GitHub to track and control projects
 
 
-#### Overview Repository Content
+### Overview Repository Content
 |File Name|Short Description|File Type|
 |-|-|-|
 |[Database Planning](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/database_planning.md)|Description of code planning activities using ERD and pseudocode|.md|
@@ -17,7 +17,7 @@ The assessment focuses on:
 |[Queries](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/queries_mysql.sql)|SQL queries developed for the assignment tasks|.sql|
 ||Export of the MySQL database containing all tables|.sql|
 
-#### General Information
+### General Information
 The goal of this assessment is to create a database using four different entities, Hospitals, Doctors, Patients and Prescriptions.
 To do so, ERD, pseudocode and datadictionary have been used to plan the database.
 To create the structure of the database, table in MySQL were created, this statement have been saved in the respective file (queriex_mysql.sql).
@@ -26,7 +26,7 @@ The database have been also saved as a .sql file as hospital-database.
 
 
 
-#### Detailed Information 
+### Detailed Information 
 
 ##### Database Planning 
 ERD have been created using [Draw.io](https://app.diagrams.net/) and saved as .png file and then incorporated to the overall code_planning Markdown File.
@@ -51,12 +51,12 @@ in query 5 limit 1 to have the doctor with most prescription, possible ot incres
 ##### MySQL Database
 Contains the 4️⃣ tables: hospitals, doctors, patients, and prescriptions.
 
-**Important note:**
+##### Important notes
 * When When importing data from the `.csv` files into the table, the file paths may need to be adapted to match the local system configuration.
 * The original .csv files provided for the assessment have intentionally not been uploaded to GitHub. Although the dataset contains fictional information, healthcare datasets are generally considered sensitive and should be handled carefully. If access to the source files is required for assessment purposes, please contact me at sd1023@exeter.ac.uk.
 
 
-#### Online Resources used for Troubleshooting
+### Online Resources used for Troubleshooting
 For troubleshooting and getting some inspirations :bulb: I used the following online resources
 * [W3Schools](https://www.w3schools.com/)
 * [MySQL](https://dev.mysql.com/doc/refman/9.7/en/preface.html)
