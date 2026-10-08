@@ -9,9 +9,9 @@ SELECT doctors.name AS Doctors, hospitals.name AS Hospital FROM doctors
 	ON doctors.hospital_id = hospitals.hospital_id
 	WHERE doctors.hospital_id = 19;
 
--- QUERY 2: List all prescriptions for a specific patient ordered by date
+-- QUERY 2: List all prescriptions for a specific patient ordered by prescription date
 
-SELECT patients.name, prescriptions.medication, prescriptions.prescription_date FROM prescriptions
+SELECT patients.name, prescriptions.prescription_id, prescriptions.medication, prescriptions.prescription_date FROM prescriptions
 	INNER JOIN patients
 	ON prescriptions.patient_id = patients.person_id
 	WHERE patients.person_id = 230
@@ -26,9 +26,7 @@ SELECT doctors.name, prescriptions.medication, prescriptions.prescription_id, pr
 
 -- QUERY 4: Add a new patient and assign the patient to a doctor
 -- a) Verify the highest existing patient ID
-SELECT * FROM patients
-        WHERE person_id = (
-                SELECT MAX(person_id) FROM patients);
+SELECT MAX(person_id) AS highest_patient_id FROM patients;
 
 -- b) Insert new patient record
 INSERT INTO patients (person_id, name, date_of_birth, address, role, doctor_id)
@@ -37,12 +35,12 @@ VALUES (701, "Peter Griffin", '1960-10-28', "7569 Frame Apt. 671, New Patricia, 
 
 -- QUERY 5: Identify the doctors with the highest number of prescriptions 
 
-SELECT doctors.name, prescriptions.doctor_id, COUNT(*) AS number_prescriptions FROM prescriptions
+SELECT doctors.name, COUNT(*) AS number_prescriptions FROM prescriptions
 	INNER JOIN doctors
 	ON prescriptions.doctor_id = doctors.person_id
 	GROUP BY prescriptions.doctor_id, doctors.name
 	ORDER BY COUNT(*) DESC
-	LIMIT 10 -- not the full output is needed
+	LIMIT 1;
 
 
 -- QUERY 6: List all doctors working at the hospital with biggest size (number of beds)
