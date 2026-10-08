@@ -47,9 +47,9 @@ Four tables were created from the four provided `.csv` files.
 **Important note:** When importing data from the `.csv` files, the file paths may need to be adapted to match the local system configuration.
 
 ##### Codes for MySQL Queries
-When writing the MySQL queries, I considered whether to use direct SELECT statements or CREATE VIEW statements. As the assignment did not require query reuse, I chose to use direct SELECT queries. This keeps the script concise and avoids creating unnecessary database objects.. 
+When writing the MySQL queries, I considered whether to use direct SELECT statements or CREATE VIEW statements. As the assignment did not require query reuse, I chose to use direct SELECT queries. This keeps the script concise and avoids creating unnecessary database objects.
 
-in queries wher a list for specific patients/name with additional information has to be printed, I decided to include the name of patients/doctor in the list, clearer table; 
+In several queries, additional descriptive fields such as patient names, doctor names, and hospital names were included in the output to provide context and improve readability. While some of these fields are technically redundant because the records are already identified through filtering conditions or relationships, they make the query results more self-explanatory and easier to interpret. A more minimalistic approach would be to return only the essential fields required to answer each query.
 
 in query 5 limit 1 to have the doctor with most prescription, possible ot increse this number, or delete LIMIT completly to have a comparison with other doctors
 
