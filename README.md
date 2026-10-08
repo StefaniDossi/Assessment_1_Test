@@ -14,8 +14,8 @@ The assessment focuses on:
 |-|-|-|
 |:brain:[Database Planning](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/database_planning.md)|Description of code planning activities using ERD and pseudocode|.md|
 |:clipboard:[Tables](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/tables_mysql.sql)|Code for creating MySQL tables|.sql|
-|[:question:Queries](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/queries_mysql.sql)|SQL queries developed for the assignment tasks|.sql|
-|[:floppy_disk:Hospital Database]()|Export of the MySQL database containing all tables|.sql|
+|:question:[Queries](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/queries_mysql.sql)|SQL queries developed for the assignment tasks|.sql|
+|:floppy_disk:[Hospital Database]()|Export of the MySQL database containing all tables|.sql|
 
 ### General Information
 The goal of this assessment is to create a database consisting of four different entities: Hospitals, Doctors, Patients and Prescriptions.
