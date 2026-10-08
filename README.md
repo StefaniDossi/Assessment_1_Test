@@ -63,7 +63,7 @@ The original .csv files provided for the assessment have intentionally not been 
 #### Instructions
 
 #### Online Resources used for Troubleshooting
-* https://www.w3schools.com/
-* https://dev.mysql.com/doc/refman/9.7/en/preface.html
-* https://stackoverflow.com/
-* https://www.datacamp.com/
+* [W3Schools](https://www.w3schools.com/)
+* [MySQL](https://dev.mysql.com/doc/refman/9.7/en/preface.html)
+* [Stack Overflow](https://stackoverflow.com/)
+* [DataCamp](https://www.datacamp.com/)
