@@ -15,14 +15,14 @@ The assessment focuses on:
 |:brain:[Database Planning](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/database_planning.md)|Description of code planning activities using ERD and pseudocode|.md|
 |:clipboard:[Tables](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/tables_mysql.sql)|Code for creating MySQL tables|.sql|
 |:question:[Queries](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/queries_mysql.sql)|SQL queries developed for the assignment tasks|.sql|
-|:floppy_disk:[Hospital Database]()|Export of the MySQL database containing all tables|.sql|
+|:floppy_disk:[Hospital Database](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/hospital_database.sql)|Export of the MySQL database containing all tables|.sql|
 
 ### General Information
 The goal of this assessment is to create a database consisting of four different entities: Hospitals, Doctors, Patients and Prescriptions.
 1. To support the database design, an Entity Relationship Diagram (ERD), pseudocode, and a data dictionary were developed during the planning phase (see [Database Planning](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/database_planning.md)).
 2. The database structure was implemented in MySQL using `CREATE TABLE` statements, which are documented in the [Tables](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/tables_mysql.sql) file.
 3. To explore the database, a series of SQL queries were written and exectued. These queries can be found in the [Queries](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/queries_mysql.sql).
-4. The complete database was exported and can be accessed through the [Hospital Database]() file.
+4. The complete database was exported and can be accessed through the [Hospital Database](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/hospital_database.sql) file.
 
 
 
