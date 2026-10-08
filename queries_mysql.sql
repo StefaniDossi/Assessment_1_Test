@@ -37,7 +37,7 @@ VALUES (701, "Peter Griffin", '1960-10-28', "7569 Frame Apt. 671, New Patricia, 
 
 -- QUERY 5: Identify the doctors with the highest number of prescriptions 
 
-SELECT doctors.name, prescriptions.doctor_id, COUNT(*) FROM prescriptions
+SELECT doctors.name, prescriptions.doctor_id, COUNT(*) AS number_prescriptions FROM prescriptions
 	INNER JOIN doctors
 	ON prescriptions.doctor_id = doctors.person_id
 	GROUP BY prescriptions.doctor_id, doctors.name
