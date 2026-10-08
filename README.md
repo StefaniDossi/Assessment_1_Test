@@ -51,6 +51,7 @@ When writing the MySQL queries, I considered whether to use direct SELECT statem
 
 in queries wher a list for specific patients/name with additional information has to be printed, I decided to include the name of patients/doctor in the list, clearer table; 
 
+in query 5 limit 1 to have the doctor with most prescription, possible ot increse this number, or delete LIMIT completly to have a comparison with other doctors
 
 ##### MySQL Database
 Contains the four tables: hospitals, doctors, patients, and prescriptions.
