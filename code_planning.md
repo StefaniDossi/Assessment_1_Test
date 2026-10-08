@@ -1,5 +1,11 @@
-## PSEUDOCODE HOSPITAL DATABASE
+# HOSPITAL DATABASE CODE PLANNING 
+## Entity Relationship Diagram (ERD)
 
+<p align="center">
+<img width="472" height="837" alt="database_erd" src="https://github.com/user-attachments/assets/1d9a3ae5-dd96-437c-8ee3-7e54bfd418e2" />
+</p>
+
+## PSEUDOCODE
 
 ### Input
 INPUT hospitals.csv
