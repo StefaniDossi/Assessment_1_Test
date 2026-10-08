@@ -49,6 +49,8 @@ Four tables were created from the four provided `.csv` files.
 ##### Codes for MySQL Queries
 When writing the MySQL queries, I considered whether to use direct SELECT statements or CREATE VIEW statements. As the assignment did not require query reuse, I chose to use direct SELECT queries. This keeps the script concise and avoids creating unnecessary database objects.. 
 
+in queries wher a list for specific patients/name with additional information has to be printed, I decided to include the name of patients/doctor in the list, clearer table; 
+
 
 ##### MySQL Database
 Contains the four tables: hospitals, doctors, patients, and prescriptions.
