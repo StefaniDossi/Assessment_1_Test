@@ -48,10 +48,20 @@ The goal of this assessment is to create a database consisting of four different
 ##### MySQL Database
 The database consist of :four: tables: hospitals, doctors, patients, and prescriptions.
 
-##### Important notes
-* When When importing data from the `.csv` files into the table, the file paths may need to be adapted to match the local system configuration.
-* The original .csv files provided for the assessment have intentionally not been uploaded to GitHub. Although the dataset contains fictional information, healthcare datasets are generally considered sensitive and should be handled carefully. If access to the source files is required for assessment purposes, please contact me at sd1023@exeter.ac.uk.
+---
 
+> [!IMPORTANT]
+>* When importing data from the `.csv` files into the table, the file paths may need to be adapted to match the local system configuration.
+>* The original .csv files provided for the assessment have intentionally not been uploaded to GitHub. Although the dataset contains fictional information, healthcare datasets are generally considered sensitive and should be handled carefully. If access to the source files is required for assessment purposes, please contact me at sd1023@exeter.ac.uk.
+
+
+>[!TIP]
+>* Small formatting mistakes, such as unintended spaces in commands, can cause SQL scripts or database exports to fail. Check syntax and spacing when troubleshooting.
+>* Avoid overengineering queries. If a simple `SELECT` statement is sufficient to answer the question, prefer the simpler solution.
+>* When executing commands, verify first that commands are being executed in the correct environment. SQL statements belong in MySQL, whereas commands such as `mysqldump` must be run from the Linux terminal.
+>* Keep your remote environment clean. When running tests, delete unused objects to avoid confusion and reduce the risk of errors.
+>* Check AI-generated GitHub commit messages before committing. They may not always be specific enough to clearly describe the changes made.
+---
 
 ### Online Resources used for Troubleshooting
 For inspiration :bulb: and troubleshooting, I used the following online resources:
@@ -59,3 +69,4 @@ For inspiration :bulb: and troubleshooting, I used the following online resource
 * [MySQL](https://dev.mysql.com/doc/refman/9.7/en/preface.html)
 * [Stack Overflow](https://stackoverflow.com/)
 * [DataCamp](https://www.datacamp.com/)
+* [MD Formatting](https://markdownformatting.com/color)
