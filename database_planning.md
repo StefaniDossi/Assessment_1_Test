@@ -1,0 +1,93 @@
+# HOSPITAL DATABASE CODE PLANNING 
+---
+## Entity Relationship Diagram (ERD)
+
+<p align="center">
+<img width="472" height="837" alt="database_erd" src="https://github.com/user-attachments/assets/1d9a3ae5-dd96-437c-8ee3-7e54bfd418e2" />
+</p>
+
+---
+## Pseudocode
+
+#### Input
+* INPUT hospitals.csv
+* INPUT doctors.csv
+* INPUT patients.csv
+* INPUT prescriptions.csv
+
+#### Create Tables
+* CREATE hospitals table
+* CREATE doctors table
+* CREATE patients table
+* CREATE prescriptions table
+
+#### Import Data
+* IMPORT .csv data into corresponding tables
+
+#### MySQL Queries
+* RETRIEVE doctors at specified hospital
+* RETRIEVE prescriptions for specified patient odered by prescription date
+* RETRIEVE prescriptions issued by specified doctor
+* ADD patient and assign doctor
+* IDENTIFY doctor with highest number of prescriptions
+* RETRIEVE doctors at largest hospital
+
+#### Output
+* OUTPUT query results
+
+---
+## Data Dictionary
+
+#### Overview
+
+The database consists of four tables (Hospitals, Doctors, Patients and Prescriptions). 
+
+Primary and foreign keys are used to maintain referential integrity between related records.
+
+
+#### Hospitals
+
+|**Field**|**Data\_Type**|**Description**|**Constraints**|
+|-|-|-|-|
+|hospital\_id|INT|Hospital unique identifier|Primary Key, NOT NULL|
+|name|VARCHAR(150)|Hospital name|NOT NULL|
+|address|VARCHAR(150)|Hospital address|NOT NULL|
+|size|INT|Number of beds|NOT NULL|
+|type|VARCHAR(150)|Type|NOT NULL|
+|accreditation\_status|VARCHAR(150)|Accreditation status|NOT NULL|
+
+#### Doctors
+
+|**Field**|**Data\_Type**|**Description**|**Constraints**|
+|-|-|-|-|
+|person_id|INT|Doctor unique identifier|Primary Key, NOT NULL|
+|name|VARCHAR(150)|Doctor name|NOT NULL|
+|date_of_birth|DATE|Doctor date of birth|NOT NULL|
+|address|VARCHAR(150)|Doctor address|NOT NULL|
+|role|VARCHAR(150)|Person role (i.e. Doctor)|NOT NULL|
+|hospital_id|INT|Hospital unique identifier|Foreign Key, NOT NULL|
+
+
+
+#### Patients
+
+|**Field**|**Data\_Type**|**Description**|**Constraints**|
+|-|-|-|-|
+|person_id|INT|Patient unique identifier|Primary Key, NOT NULL|
+|name|VARCHAR(150)|Patient name|NOT NULL|
+|date_of_birth|DATE|Patients date of birth|NOT NULL|
+|address|VARCHAR(150)|Patient address|NOT NULL|
+|role|VARCHAR(150)|Person role (i.e. Patient)|NOT NULL|
+|doctor_id|INT|Doctor unique identifier|Foreign Key, NOT NULL|
+
+
+
+#### Prescriptions
+
+|**Field**|**Data\_Type**|**Description**|**Constraints**|
+|-|-|-|-|
+|prescription_id|INT|Prescription unique identifier|Primary Key, NOT NULL|
+|patient_id|INT|Patient unique identifier|Foreign Key, NOT NULL|
+|doctor_id|INT|Doctor unique identifier|Foreign Key, NOT NULL|
+|medication|VARCHAR(150)|Name prescribed medication|NOT NULL|
+|prescription_date|DATE|Date of prescription|NOT NULL|
