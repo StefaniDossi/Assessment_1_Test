@@ -1,20 +1,12 @@
-### Assessment One Test README
-
-To copy after this text
-
-### Module 1 - Assessment 1 
-Master of Health Data Science <br>
-University of Exter <br>
-Module: Computing Skills and Phython
-
-#### Overview of Assessment Content
-This repository contains the deliverables completed as part of Assessment 1.
+## A HOSPITAL DATABASE
+This repository contains the deliverables completed as part of Assessment 1 of Module 1 of the Master of Health Data Science, University of Exter.
 
 The assessment focuses on:
 - code planning with Entity Relationship Diagram (ERD) and pseudocode
 - creating MySQL databases
 - writing MySQL queries
 - using GitHub to track and control projects
+
 
 #### Overview Repository Content
 |File Name|Short Description|File Type|
@@ -25,24 +17,28 @@ The assessment focuses on:
 ||Export of the MySQL database containing all tables|.sql|
 
 #### General Information
-The database was designed using four main entities:
-- Hospitals
-- Doctors
-- Patients
-- Prescriptions  <br>
+The goal of this assessment is to create a database using four different entities, Hospitals, Doctors, Patients and Prescriptions.
+To do so, ERD, pseudocode and datadictionary have been used to plan the database.
+To create the structure of the database, table in MySQL were created, this statement have been saved in the respective file (queriex_mysql.sql).
+To explore the database specific queries have been made, that can be foun in queries.mysl slq file
+The database have been also saved as a .sql file as hospital-database.
 
-Doctors and patients were implemented as separate tables to simplify relationships and improve readability of the database structure.
 
-#### Details Repository 
 
-##### Data Dictionary
-##### Pseudocode File
+#### Detailed Information 
+
+##### Database Planning 
+ERD have been created using [Draw.io](https://app.diagrams.net/) and saved as .png file and then incorporated to the overall code_planning Markdown File.
+Additional this files contains the structure of pseudocode and data dictionary.
+Compared to the pseudocode structure that we learnt during the module, this text is a bit more descriptive, as, in my opinion, the assessment and tasks did not allowed for a more code-style pseudocode writing.
+
 ##### Codes for Tables
+Doctors and patients were implemented as separate tables to simplify relationships and improve readability of the database structure.
 The table creation code was saved as a .sql file rather than a .txt file, as SQL formatting improves readability and clearly distinguishes database commands.
 
 Four tables were created from the four provided `.csv` files.
 
-**Important note:** When importing data from the `.csv` files, the file paths may need to be adapted to match the local system configuration.
+ 
 
 ##### Codes for MySQL Queries
 When writing the MySQL queries, I considered whether to use direct SELECT statements or CREATE VIEW statements. As the assignment did not require query reuse, I chose to use direct SELECT queries. This keeps the script concise and avoids creating unnecessary database objects.
@@ -54,9 +50,9 @@ in query 5 limit 1 to have the doctor with most prescription, possible ot incres
 ##### MySQL Database
 Contains the four tables: hospitals, doctors, patients, and prescriptions.
 
-
-#### Additional Information
-The original .csv files provided for the assessment have intentionally not been uploaded to GitHub. Although the dataset contains fictional information, healthcare datasets are generally considered sensitive and should be handled carefully. If access to the source files is required for assessment purposes, please contact me at sd1023@exeter.ac.uk.
+**Important note:**
+* When When importing data from the `.csv` files into the table, the file paths may need to be adapted to match the local system configuration.
+* The original .csv files provided for the assessment have intentionally not been uploaded to GitHub. Although the dataset contains fictional information, healthcare datasets are generally considered sensitive and should be handled carefully. If access to the source files is required for assessment purposes, please contact me at sd1023@exeter.ac.uk.
 
 #### Instructions
 
