@@ -19,9 +19,7 @@ The assessment focuses on:
 #### Overview Repository Content
 |File Name|Short Description|File Type|
 |-|-|-|
-|[README.md](https://github.com/StefaniDossi/Assessment_1_Test/edit/main/README.md)|Overview document in repository|.md| DELETE README FILE 
-||Description of entities, attributes, and their relationships|.png|
-||Pseudocodes for planning Flow in database creation and respetive queries|.txt|
+|[Code Planning]()|Description of code planning activities using ERD and pseudocode|.md|
 ||Code for creating MySQL tables|.sql|
 ||SQL queries developed for the assignment tasks|.sql|
 ||Export of the MySQL database containing all tables|.sql|
