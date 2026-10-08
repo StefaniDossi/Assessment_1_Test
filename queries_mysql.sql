@@ -9,9 +9,9 @@ SELECT doctors.name AS Doctors, hospitals.name AS Hospital FROM doctors
 	ON doctors.hospital_id = hospitals.hospital_id
 	WHERE doctors.hospital_id = 19;
 
--- QUERY 2: List all prescriptions for a specific patient
+-- QUERY 2: List all prescriptions for a specific patient ordered by date
 
-SELECT prescriptions.prescription_id, prescriptions.prescription_date, prescriptions.medication FROM prescriptions
+SELECT patients.name, prescriptions.medication, prescriptions.prescription_date FROM prescriptions
 	INNER JOIN patients
 	ON prescriptions.patient_id = patients.person_id
 	WHERE patients.person_id = 230
@@ -19,7 +19,7 @@ SELECT prescriptions.prescription_id, prescriptions.prescription_date, prescript
 
 -- QUERY 3: List all prescriptions issued by a specific doctor
 
-SELECT prescriptions.prescription_id, prescriptions.prescription_date, prescriptions.medication, doctors.name FROM prescriptions
+SELECT doctors.name, prescriptions.medication, prescriptions.prescription_id, prescriptions.prescription_date   FROM prescriptions
 	INNER JOIN doctors
 	ON prescriptions.doctor_id = doctors.person_id
 	WHERE doctors.person_id = 3;
