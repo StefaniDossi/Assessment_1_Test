@@ -30,7 +30,7 @@
 |-|-|-|-|
 |person_id|INT|Patient unique identifier|Primary Key, NOT NULL|
 |name|VARCHAR(150)|Patient name|NOT NULL|
-|date_of_birth|DATE|Patients date of birth||NOT NULL|
+|date_of_birth|DATE|Patients date of birth|NOT NULL|
 |address|VARCHAR(150)|Patient address|NOT NULL|
 |role|VARCHAR(150)|Person role (i.e. Patient)|NOT NULL|
 |doctor_id|INT|Doctor unique identifier|Foreign Key, NOT NULL|
