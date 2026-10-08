@@ -1,4 +1,5 @@
-## A HOSPITAL DATABASE
+# A HOSPITAL DATABASE :hospital:
+
 This repository contains the deliverables completed as part of Assessment 1 of Module 1 of the Master of Health Data Science, University of Exter.
 
 The assessment focuses on:
@@ -11,9 +12,9 @@ The assessment focuses on:
 #### Overview Repository Content
 |File Name|Short Description|File Type|
 |-|-|-|
-|[Code Planning]()|Description of code planning activities using ERD and pseudocode|.md|
-||Code for creating MySQL tables|.sql|
-||SQL queries developed for the assignment tasks|.sql|
+|[Database Planning](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/database_planning.md)|Description of code planning activities using ERD and pseudocode|.md|
+|[Tables](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/tables_mysql.sql)|Code for creating MySQL tables|.sql|
+|[Queries](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/queries_mysql.sql)|SQL queries developed for the assignment tasks|.sql|
 ||Export of the MySQL database containing all tables|.sql|
 
 #### General Information
@@ -48,15 +49,15 @@ In several queries, additional descriptive fields such as patient names, doctor 
 in query 5 limit 1 to have the doctor with most prescription, possible ot increse this number, or delete LIMIT completly to have a comparison with other doctors
 
 ##### MySQL Database
-Contains the four tables: hospitals, doctors, patients, and prescriptions.
+Contains the 4️⃣ tables: hospitals, doctors, patients, and prescriptions.
 
 **Important note:**
 * When When importing data from the `.csv` files into the table, the file paths may need to be adapted to match the local system configuration.
 * The original .csv files provided for the assessment have intentionally not been uploaded to GitHub. Although the dataset contains fictional information, healthcare datasets are generally considered sensitive and should be handled carefully. If access to the source files is required for assessment purposes, please contact me at sd1023@exeter.ac.uk.
 
-#### Instructions
 
 #### Online Resources used for Troubleshooting
+For troubleshooting and getting some inspirations :bulb: I used the following online resources
 * [W3Schools](https://www.w3schools.com/)
 * [MySQL](https://dev.mysql.com/doc/refman/9.7/en/preface.html)
 * [Stack Overflow](https://stackoverflow.com/)
