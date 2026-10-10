@@ -1,9 +1,11 @@
 -- Create Database
 CREATE DATABASE hospital_database;
+
+-- Select Database
 USE hospital_database;
 
 
--- Create Tables
+-- Create Tables 
 
 -- Hospital Table
 CREATE TABLE hospitals (
