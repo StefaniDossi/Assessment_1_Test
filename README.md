@@ -13,14 +13,14 @@ The assessment focuses on:
 |File Name|Short Description|File Type|
 |-|-|-|
 |:brain:[Database Planning](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/database_planning.md)|Description of code planning activities using ERD and pseudocode|.md|
-|:clipboard:[Tables](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/tables_mysql.sql)|Code for creating MySQL tables|.sql|
+|:clipboard:[Database Setup](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/tables_mysql.sql)|Code for creating MySQL tables|.sql|
 |:question:[Queries](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/queries_mysql.sql)|SQL queries developed for the assignment tasks|.sql|
 |:floppy_disk:[Hospital Database](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/hospital_database.sql)|Export of the MySQL database containing all tables|.sql|
 
 ### General Information
 The goal of this assessment is to create a database consisting of four different entities: Hospitals, Doctors, Patients and Prescriptions.
 1. To support the database design, an Entity Relationship Diagram (ERD), pseudocode, and a data dictionary were developed during the planning phase (see [Database Planning](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/database_planning.md)).
-2. The database structure was implemented in MySQL using `CREATE TABLE` statements, which are documented in the [Tables](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/tables_mysql.sql) file.
+2. The database structure was implemented in MySQL using `CREATE TABLE` statements, which are documented in the [Database Setup](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/tables_mysql.sql) file.
 3. To explore the database, a series of SQL queries were written and exectued. These queries can be found in the [Queries](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/queries_mysql.sql).
 4. The complete database was exported and can be accessed through the [Hospital Database](https://github.com/StefaniDossi/computing-skills-m1-a1/blob/main/hospital_database.sql) file.
 
@@ -33,12 +33,15 @@ The goal of this assessment is to create a database consisting of four different
 * In addition, this file contains the pseudocode and data dictionary used to support the database design.
 * Compared with the pseudocode examples presented during the module, the pseudocode that I used for the assessment is more descriptive. I chose this approach because I felt that a more code-oriented pseudocode format would not fully reflect the database development process. 
 
-##### Codes for Tables
+##### Database setup
+* The code creates the hospital database, selects the database, creates the four tables, and imports the CSV data.
+* When accessing MySQL, you can use `SOURCE database_setup.sql;` to execute the script directly.
 * Four tables were created based on the four provided .csv files.
 * Doctors and patients were implemented as separate tables to simplify relationships and improve readability of the database structure.
 * The table creation code was saved as a .sql file rather than a .txt file, as .sql format improves readability and clearly distinguishes database commands.
 
-##### Codes for MySQL Queries
+##### MySQL queries
+* When accessing MySQL, you can use `SOURCE queries_mysql.sql;` to execute the script directly.
 * When writing the MySQL queries, I considered whether to use direct `SELECT` statements or `CREATE VIEW` statements. As the assignment did not require query reuse, I chose to use direct `SELECT` queries. This keeps the script concise and avoids creating unnecessary database objects.
 * In several queries, fields such as patient names, doctor names, and hospital names were included in the output to provide context and improve readability. While technically redundant, these fields make the query results more self-explanatory and easier to interpret. 
 * In query :five:,  `LIMIT =  1` was used to return only the doctor with the highest number of prescriptions. Depending on desired level of details, this limit could be increased or removed entirely to display the prescribing activity of all doctors. 
