@@ -1,6 +1,7 @@
--------------------------------------
+-- Select library
+USE hospital_database;
+
 -- Queries MySQL for database "A hospital database"
-------------------------------------
 
 -- QUERY 1: List all doctors based at a specific hospital
 
