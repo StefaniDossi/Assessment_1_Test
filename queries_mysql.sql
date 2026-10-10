@@ -1,4 +1,4 @@
--- Select library
+-- Select database before running the queries
 USE hospital_database;
 
 -- Queries MySQL for database "A hospital database"
