@@ -1,6 +1,9 @@
--------------------------------------
--- MySQL TABLE creation code
--------------------------------------
+-- Create Database
+CREATE DATABASE hospital_database;
+USE hospital_database;
+
+
+-- Create Tables
 
 -- Hospital Table
 CREATE TABLE hospitals (
